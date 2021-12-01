@@ -4,8 +4,8 @@ from nltk.book import *
 print(text6)
 
 #List of all words in text6 that end in -ise:
-ending = sorted(w for w in set(text6) if w.endswith('ise'))
-print(ending)
+ending = sorted(w for w in set(text6) if w.endswith('ise')) #The set is used in order to have a single token of a word in a text. I may be used once or n amount of times. A set simply "collapses all duplicates"
+print(ending) # sorted is used to generate a sorted list from punctuation, words with capital letters [A-Z], then regular words [a-z].
 
 #List of all words in text6 that contain the letter 'z':
 contain = sorted(w for w in set(text6) if "z" in w)
